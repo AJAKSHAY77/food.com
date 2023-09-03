@@ -2966,24 +2966,22 @@ var _restrauntMenuDefault = parcelHelpers.interopDefault(_restrauntMenu);
 var _menu = require("./Components/menu");
 var _menuDefault = parcelHelpers.interopDefault(_menu);
 var _reactRouterDom = require("react-router-dom");
-var _classComponent = require("./Components/class.component");
-var _classComponentDefault = parcelHelpers.interopDefault(_classComponent);
 const Applayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 18,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 20,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
@@ -2995,12 +2993,12 @@ const Iamcreatingrouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 28,
+            lineNumber: 27,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 29,
+            lineNumber: 28,
             columnNumber: 19
         }, undefined),
         children: [
@@ -3008,12 +3006,12 @@ const Iamcreatingrouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 33,
+                    lineNumber: 32,
                     columnNumber: 18
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 34,
+                    lineNumber: 33,
                     columnNumber: 23
                 }, undefined)
             },
@@ -3021,35 +3019,25 @@ const Iamcreatingrouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 38,
+                    lineNumber: 37,
                     columnNumber: 18
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 39,
+                    lineNumber: 38,
                     columnNumber: 23
-                }, undefined),
-                children: [
-                    {
-                        path: "profile",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _classComponentDefault.default), {}, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 43,
-                            columnNumber: 21
-                        }, undefined)
-                    }
-                ]
+                }, undefined)
             },
             {
                 path: "/contactus",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 49,
+                    lineNumber: 42,
                     columnNumber: 18
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 50,
+                    lineNumber: 43,
                     columnNumber: 23
                 }, undefined)
             },
@@ -3057,12 +3045,12 @@ const Iamcreatingrouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/helpus",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _helpDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 54,
+                    lineNumber: 47,
                     columnNumber: 18
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 55,
+                    lineNumber: 48,
                     columnNumber: 23
                 }, undefined)
             },
@@ -3070,12 +3058,12 @@ const Iamcreatingrouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restrauntMenuDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 59,
+                    lineNumber: 52,
                     columnNumber: 18
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 60,
+                    lineNumber: 53,
                     columnNumber: 23
                 }, undefined)
             },
@@ -3083,12 +3071,12 @@ const Iamcreatingrouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/menu",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _menuDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 64,
+                    lineNumber: 57,
                     columnNumber: 18
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 65,
+                    lineNumber: 58,
                     columnNumber: 22
                 }, undefined)
             }
@@ -3100,7 +3088,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: Iamcreatingrouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 72,
+    lineNumber: 65,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3111,7 +3099,7 @@ $RefreshReg$(_c, "Applayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Components/Header":"fNIx6","./Components/Body":"6J35F","./Components/Footer":"eUZ6J","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/about":"l9A36","./Components/error":"7zP7K","./Components/contact":"lLhI6","./Components/help":"bMXPz","react-router-dom":"9xmpe","./Components/RestrauntMenu":"2W28y","./Components/menu":"8Zx0L","./Components/class.component":"guMM2"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Components/Header":"fNIx6","./Components/Body":"6J35F","./Components/Footer":"eUZ6J","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/about":"l9A36","./Components/error":"7zP7K","./Components/contact":"lLhI6","./Components/help":"bMXPz","react-router-dom":"9xmpe","./Components/RestrauntMenu":"2W28y","./Components/menu":"8Zx0L"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -35579,275 +35567,41 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _profile = require("./profile");
-var _profileDefault = parcelHelpers.interopDefault(_profile);
-var _classComponent = require("./class.component");
-var _classComponentDefault = parcelHelpers.interopDefault(_classComponent);
-// import React from "react"
-var _react = require("react");
-// making aboutus component by functional method
-// const Aboutus2 = () => {
-//     return (
-//         <div>
-//             <h1>this is react router</h1>
-//             <p>hello nice to meet you</p>
-//             <Profile name={"akshay"} id={101} salaray={"2000"}/>
-//             <ProfileClass name={"aditya"} id={201}/>
-//         </div>
-//     )
-// }
-//making about us component using class component
-// class Aboutus extends React.Component
-class Aboutus extends (0, _react.Component) {
-    //constructor
-    constructor(props){
-        super(props);
-        console.log("parent constructor");
-    }
-    //api call
-    componentDidMount() {
-        console.log("parent ccomponentdimount");
-    }
-    render() {
-        console.log("parent render");
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "this is react router"
-                }, void 0, false, {
-                    fileName: "src/Components/about.js",
-                    lineNumber: 42,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "hello nice to meet you"
-                }, void 0, false, {
-                    fileName: "src/Components/about.js",
-                    lineNumber: 43,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: this.props.salaray
-                }, void 0, false, {
-                    fileName: "src/Components/about.js",
-                    lineNumber: 44,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _classComponentDefault.default), {
-                    name: "aditya",
-                    id: 2033
-                }, void 0, false, {
-                    fileName: "src/Components/about.js",
-                    lineNumber: 46,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Components/about.js",
-            lineNumber: 41,
-            columnNumber: 7
-        }, this);
-    }
-}
+const Aboutus = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "this is react router"
+            }, void 0, false, {
+                fileName: "src/Components/about.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "hello nice to meet you"
+            }, void 0, false, {
+                fileName: "src/Components/about.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/about.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Aboutus;
 exports.default = Aboutus;
+var _c;
+$RefreshReg$(_c, "Aboutus");
 
   $parcel$ReactRefreshHelpers$87d4.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./profile":"5f43y","./class.component":"guMM2","react":"21dqq"}],"5f43y":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c5d4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c5d4.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-// this functional component
-function Profile({ name, id, salaray }) {
-    _s();
-    // const{name,id} = props
-    const [count, setcount] = (0, _react.useState)(0);
-    const [count2, setcount2] = (0, _react.useState)(0);
-    (0, _react.useEffect)(()=>{
-    //api call
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                onClick: ()=>{
-                    setcount(1);
-                },
-                children: count
-            }, void 0, false, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 13,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: count2
-            }, void 0, false, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 20,
-                columnNumber: 11
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "this is functional profile page"
-            }, void 0, false, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "weolcomes "
-            }, void 0, false, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    "Name:",
-                    name
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 23,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    "Name:",
-                    id
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    "salary:",
-                    salaray
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 25,
-                columnNumber: 11
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>{
-                    setcount2(10);
-                },
-                children: "click me"
-            }, void 0, false, {
-                fileName: "src/Components/profile.js",
-                lineNumber: 26,
-                columnNumber: 11
-            }, this)
-        ]
-    }, void 0, true);
-}
-_s(Profile, "pJctnE1oY3pd5ZMMqVULlYNLlGA=");
-_c = Profile;
-exports.default = Profile;
-var _c;
-$RefreshReg$(_c, "Profile");
-
-  $parcel$ReactRefreshHelpers$c5d4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"guMM2":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d3e4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d3e4.prelude(module);
-
-try {
-// this is class component
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class Profile extends (0, _reactDefault.default).Component {
-    // contructor is use to use state variable 
-    constructor(props){
-        super(props);
-        //creating state
-        this.state = {
-            name: "akshay jain",
-            location: "jabalpur"
-        };
-    }
-    // to call api
-    async componentDidMount() {
-        const data = await fetch("https://api.github.com/users/AJAKSHAY77");
-        const json = await data.json();
-        console.log(json);
-        this.setState({
-            userInfo: json
-        });
-    }
-    // to render ui elements
-    render() {
-        const { name, location, avatar_url } = this.state;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "class component"
-                }, void 0, false, {
-                    fileName: "src/Components/class.component.js",
-                    lineNumber: 37,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: this.state?.userInfo?.avatar_url
-                }, void 0, false, {
-                    fileName: "src/Components/class.component.js",
-                    lineNumber: 38,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: [
-                        "Name:",
-                        this.state?.userInfo?.name
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Components/class.component.js",
-                    lineNumber: 39,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: [
-                        "City:",
-                        this.state?.userInfo?.location
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Components/class.component.js",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true);
-    }
-}
-exports.default = Profile;
-
-  $parcel$ReactRefreshHelpers$d3e4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"7zP7K":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7zP7K":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$f2c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
