@@ -10,6 +10,7 @@ import Helpus from "./Components/help";
 import Restrauntmenu from "./Components/RestrauntMenu";
 import Menu from "./Components/menu";
 import { createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
+import Profile from "./Components/profile";
 
 const Applayout = () => {
   return (
@@ -36,6 +37,13 @@ const Iamcreatingrouter = createBrowserRouter([
         path: "/about",
         element: <Aboutus />,
         errorElement: <Error />,
+        children: [
+          {
+            path: "profile",
+            element: <Profile/>,
+            errorElement: <Error />,
+          },
+        ],
       },
       {
         path: "/contactus",
@@ -55,8 +63,8 @@ const Iamcreatingrouter = createBrowserRouter([
       {
         path: "/menu",
         element: <Menu />,
-        errorElement:<Error/>
-      }
+        errorElement: <Error />,
+      },
     ],
   },
 ]);
