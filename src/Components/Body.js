@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { restaurantlist } from "../config";
 import Restrauntcard from "./Restruantcard";
 import Shimmerui from "./shimer.ui";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { filterData } from "../../utils/helper";
+import useOnline from "../../utils/IsOnline";
 
-function filterData(searchText, allrestaurants) {
-  return allrestaurants.filter((el) => el?.info?.name?.toLowerCase()?.includes(searchText.toLowerCase()));
-}
+
 
 const Body = () => { 
   const [allrestaurants, setallrestaurants] = useState([]);
@@ -35,6 +35,14 @@ restaurants);
 restaurants);
     
   }
+ 
+  let online = useOnline()
+  if (!online) {
+   return <h1>Please check your internet connection and try again</h1>
+  }
+
+  
+ 
 //console.log("render");
   if (!allrestaurants) {
     return null

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy ,Suspense} from "react";
 import ReactDom from "react-dom/client";
 import Headercomponent from "./Components/Header";
 import Body from "./Components/Body";
@@ -8,20 +8,29 @@ import Error from "./Components/error";
 import Contactus from "./Components/contact";
 import Helpus from "./Components/help";
 import Restrauntmenu from "./Components/RestrauntMenu";
-import Menu from "./Components/menu";
-import { createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
+// import Menu from "./Components/menu";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Profile from "./Components/profile";
+import Shimmerui from "./Components/shimer.ui.js";
+
+
+
+// import Instamart from "./Components/instamart";
+const Instamart = lazy(() => {
+   return import("./Components/instamart.js")
+})
+
+const Menu = lazy(()=>import("./Components/menu"))
 
 const Applayout = () => {
   return (
     <>
       <Headercomponent />
-      <Outlet/>
+      <Outlet />
       <Footer />
     </>
   );
 };
-
 const Iamcreatingrouter = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +49,7 @@ const Iamcreatingrouter = createBrowserRouter([
         children: [
           {
             path: "profile",
-            element: <Profile/>,
+            element: <Profile />,
             errorElement: <Error />,
           },
         ],
@@ -62,7 +71,20 @@ const Iamcreatingrouter = createBrowserRouter([
       },
       {
         path: "/menu",
-        element: <Menu />,
+        element: (
+          <Suspense  fallback={<h1>loading menu ...</h1>}>
+            <Menu />
+          </Suspense>
+        ),
+        errorElement: <Error />,
+      },
+      {
+        path: "/instamart",
+        element: (
+          <Suspense fallback={<Shimmerui />}>
+            <Instamart />
+          </Suspense>
+        ),
         errorElement: <Error />,
       },
     ],
@@ -70,4 +92,4 @@ const Iamcreatingrouter = createBrowserRouter([
 ]);
 
 const root = ReactDom.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={Iamcreatingrouter} />); 
+root.render(<RouterProvider router={Iamcreatingrouter} />);

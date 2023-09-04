@@ -45,6 +45,9 @@ const Headercomponent = () => {
           <Link to="/menu">
             <li>menu</li>
           </Link>
+          <Link to="/instamart">
+            <li>instamart</li>
+          </Link>
         </ul>
       </div>
       {Isloggedin ? (
