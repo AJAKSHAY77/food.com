@@ -57,17 +57,19 @@ restaurants);
   //if resrant has data => actual data ui 
   return (allrestaurants.length===0)?(<Shimmerui/>):(
     <>
-      <div className="search-container">
+      <div className="search-container p-5 bg-pink-50 my-5  ">
         <input
           type="text"
-          className="search-box"
+          className="search-box focus:bg-green-200 text-center"
+          placeholder="search"
           value={searchText}  
           onChange={(e) => {
             setsearchText(e.target.value);
           }}
         />
         <button
-          className="search-btn"
+         
+          className="p-1 m-2 bg-green-500 rounded-md hover:bg-orange-300"
           onClick={() => {
             const Data = filterData(searchText, allrestaurants);
             setFilterrestaurants(Data);
@@ -76,7 +78,7 @@ restaurants);
           search
         </button>
       </div>
-      <div className="restaurant-list">
+      <div className="flex gap-10 flex-wrap rounded-xl p-3">
         {Filterrestaurants.map((el) => {
           return ( <Link to={"/restaurant/" + el.info.id} key={ ...el.info.id }>
                    <Restrauntcard {...el.info} />

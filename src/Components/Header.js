@@ -11,42 +11,42 @@ const Title = () => {
   return (
     <>
       <a href="/">
-        <img id="img" alt="logo" src={Logo}></img>
+        <img className="h-28 p-2" id="img" alt="logo" src={Logo}></img>
       </a>
     </>
   );
 };
 const obj = {
-  backgroundColor: "black",
-  color: "white",
+  // backgroundColor: "black",
+  // color: "white",
 };
 const Headercomponent = () => {
   const [Isloggedin, setIsloggedin] = useState(true);
   return (
-    <div style={obj} className="header">
+    <div className="flex  justify-between bg- bg-pink-200 text-black shadow-lg">
       <Title />
-      <div className="navitems">
-        <ul>
+      <div>
+        <ul className=" flex py-10 ">
           <Link to="/">
-            <li>home</li>
+            <li className=" px-2">home</li>
           </Link>
 
           <Link to="/contactus">
-            <li>contacts</li>
+            <li className=" px-2">contacts</li>
           </Link>
 
           <Link to="/helpus">
-            <li>cart</li>
+            <li className=" px-2">cart</li>
           </Link>
           <Link to="/about">
-            <li>about</li>
+            <li className=" px-2">about</li>
           </Link>
 
           <Link to="/menu">
-            <li>menu</li>
+            <li className=" px-2">menu</li>
           </Link>
           <Link to="/instamart">
-            <li>instamart</li>
+            <li className=" px-2">instamart</li>
           </Link>
         </ul>
       </div>

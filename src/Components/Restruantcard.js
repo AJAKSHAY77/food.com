@@ -14,11 +14,11 @@ const Restrauntcard = ({ name, cloudinaryImageId, cuisines, avgRating }) => {
   //   </div>
   // );
   return (
-    <div className="cards">
+    <div className="w-[250px] shadow-xl bg-pink-50">
       <img src={IMG_CO_URL + cloudinaryImageId} />
-      <h2>{name}</h2>
-      <h3>{cuisines}</h3>
-      <h4>{avgRating}</h4>
+      <h2 className="font-bold text-2xl ">{name}</h2> <br />
+      <h3>{cuisines}</h3> <br />
+      <h4>{avgRating}</h4> <br />
     </div>
   );
 };
