@@ -1,5 +1,10 @@
+
+
+import Usercontext from "../../utils/Usercontext";
 import { IMG_CO_URL } from "..//config";
+import { useContext } from "react";
 const Restrauntcard = ({ name, cloudinaryImageId, cuisines, avgRating }) => {
+  const {user}  = useContext(Usercontext)
   // return (
   //   <div className="cards">
   //     <img
@@ -19,6 +24,8 @@ const Restrauntcard = ({ name, cloudinaryImageId, cuisines, avgRating }) => {
       <h2 className="font-bold text-2xl ">{name}</h2> <br />
       <h3>{cuisines}</h3> <br />
       <h4>{avgRating}</h4> <br />
+      <h2 className="font-bold">{user.name}</h2>
+      <h2 className="font-bold">{user.email}</h2>
     </div>
   );
 };

@@ -15,6 +15,7 @@ import Shimmerui from "./Components/shimer.ui.js";
 
 
 
+
 // import Instamart from "./Components/instamart";
 const Instamart = lazy(() => {
    return import("./Components/instamart.js")
@@ -23,12 +24,14 @@ const Instamart = lazy(() => {
 const Menu = lazy(()=>import("./Components/menu"))
 
 const Applayout = () => {
+  
   return (
     <>
       <Headercomponent />
       <Outlet />
       <Footer />
     </>
+    
   );
 };
 const Iamcreatingrouter = createBrowserRouter([

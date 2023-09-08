@@ -608,7 +608,7 @@ var _react = require("react");
 var _s = $RefreshSig$();
 const Section = ({ title, description })=>{
     _s();
-    const [Isvisible, setIsvisible] = (0, _react.useState)(false);
+    const [Isvisible, setIsvisible] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "border border-black rounded-lg p-3 m-2",
@@ -629,7 +629,7 @@ const Section = ({ title, description })=>{
                     children: "hide"
                 }, void 0, false, {
                     fileName: "src/Components/instamart.js",
-                    lineNumber: 11,
+                    lineNumber: 10,
                     columnNumber: 11
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: "cursor-pointer underline",
@@ -639,14 +639,14 @@ const Section = ({ title, description })=>{
                     children: "show"
                 }, void 0, false, {
                     fileName: "src/Components/instamart.js",
-                    lineNumber: 20,
+                    lineNumber: 19,
                     columnNumber: 11
                 }, undefined),
                 Isvisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: description
                 }, void 0, false, {
                     fileName: "src/Components/instamart.js",
-                    lineNumber: 30,
+                    lineNumber: 29,
                     columnNumber: 23
                 }, undefined)
             ]
@@ -657,7 +657,7 @@ const Section = ({ title, description })=>{
         }, undefined)
     }, void 0, false);
 };
-_s(Section, "ivNqW5AqSJoT/N69lv8/DPSxR6E=");
+_s(Section, "XagJBPtDbuD3NBLP6GUV0L/9WkE=");
 _c = Section;
 const Instamart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -667,7 +667,7 @@ const Instamart = ()=>{
                 children: "Instamart"
             }, void 0, false, {
                 fileName: "src/Components/instamart.js",
-                lineNumber: 38,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
@@ -675,7 +675,7 @@ const Instamart = ()=>{
                 description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
             }, void 0, false, {
                 fileName: "src/Components/instamart.js",
-                lineNumber: 41,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
@@ -691,7 +691,7 @@ const Instamart = ()=>{
                 description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
             }, void 0, false, {
                 fileName: "src/Components/instamart.js",
-                lineNumber: 53,
+                lineNumber: 54,
                 columnNumber: 7
             }, undefined)
         ]
@@ -708,6 +708,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react":"21dqq"}]},["cMKCe","1xC6H"], null, "parcelRequire4ee6")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["cMKCe","1xC6H"], null, "parcelRequire4ee6")
 
 //# sourceMappingURL=instamart.332b5ff7.js.map
