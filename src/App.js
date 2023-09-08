@@ -12,6 +12,9 @@ import Restrauntmenu from "./Components/RestrauntMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Profile from "./Components/profile";
 import Shimmerui from "./Components/shimer.ui.js";
+import store from "./Components/store";
+import { Provider } from "react-redux";
+
 
 
 
@@ -26,12 +29,11 @@ const Menu = lazy(()=>import("./Components/menu"))
 const Applayout = () => {
   
   return (
-    <>
+    <Provider store={store}>
       <Headercomponent />
       <Outlet />
       <Footer />
-    </>
-    
+    </Provider>
   );
 };
 const Iamcreatingrouter = createBrowserRouter([
