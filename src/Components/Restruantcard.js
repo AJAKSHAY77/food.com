@@ -26,6 +26,7 @@ const Restrauntcard = ({ name, cloudinaryImageId, cuisines, avgRating }) => {
       <h4>{avgRating}</h4> <br />
       <h2 className="font-bold">{user.name}</h2>
       <h2 className="font-bold">{user.email}</h2>
+      
     </div>
   );
 };

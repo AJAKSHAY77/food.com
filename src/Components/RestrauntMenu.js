@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { IMG_CO_URL } from "../config";
 import Shimmerui from "./shimer.ui";
+import { additem } from "./slice.js";
+import { useDispatch } from "react-redux";
 
 const Restrauntmenu = () => {
   // const params = useParams()
@@ -16,6 +18,7 @@ const Restrauntmenu = () => {
     getRestaurantInfo()
   }, [])
   async function getRestaurantInfo() {
+
     const data = await fetch(
       "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.1708138&lng=79.93047419999999&restaurantId=102672&catalog_qa=undefined&submitAction=ENTER"+id
     );
@@ -23,9 +26,17 @@ const Restrauntmenu = () => {
     console.log(json);
     setRestaurant(json?.data?.cards[0]?.card?.card?.info)
   }
+
+  const dispatch=useDispatch()
+
+  const handleadditem = () => {
+      dispatch(additem("grapes"));
+  };
   
-  return (!Restaurant)?(<Shimmerui/>):(
-    <div>
+  return !Restaurant ? (
+    <Shimmerui />
+  ) : (
+    <div className="flex">
       <div>
         <h1>Restraunt id:{id}</h1>
 
@@ -34,9 +45,28 @@ const Restrauntmenu = () => {
         <h3>{`city :${Restaurant?.city}`}</h3>
         <h3>{Restaurant?.locality}</h3>
         <h3>{Restaurant?.avgRating}</h3>
+        <button
+          className="bg-green-500 p-3"
+          onClick={() => handleadditem()}
+        >
+          add item
+        </button>
       </div>
       <div>
-
+        <h1 className="ml-6">menu</h1>
+        {/* <ul>
+          {Object.values(Restaurant?.menu?.items).map((item) => (
+            <li key={item.id}>
+              {item.name}-{" "}
+              <button
+                className="bg-green-500 p-3"
+                onClick={() => handleadditem(item)}
+              >
+                add item
+              </button>
+            </li>
+          ))}
+        </ul> */}
       </div>
     </div>
   );

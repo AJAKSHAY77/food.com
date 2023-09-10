@@ -12,19 +12,20 @@ import Restrauntmenu from "./Components/RestrauntMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Profile from "./Components/profile";
 import Shimmerui from "./Components/shimer.ui.js";
+// import store from "./Components/store";
+// import { Provider } from "react-redux";
+// import Instamart from "./Components/instamart";
+
 import store from "./Components/store";
 import { Provider } from "react-redux";
-
-
-
-
-
-// import Instamart from "./Components/instamart";
+// import Cart from "./Components/cart";
 const Instamart = lazy(() => {
    return import("./Components/instamart.js")
 })
 
-const Menu = lazy(()=>import("./Components/menu"))
+const Menu = lazy(() => import("./Components/menu"))
+
+const Cart = lazy(()=>import("./Components/cart"))
 
 const Applayout = () => {
   
@@ -77,7 +78,7 @@ const Iamcreatingrouter = createBrowserRouter([
       {
         path: "/menu",
         element: (
-          <Suspense  fallback={<h1>loading menu ...</h1>}>
+          <Suspense fallback={<h1>loading menu ...</h1>}>
             <Menu />
           </Suspense>
         ),
@@ -91,6 +92,14 @@ const Iamcreatingrouter = createBrowserRouter([
           </Suspense>
         ),
         errorElement: <Error />,
+      },
+      {
+        path: "/cart",
+        element: (
+          <Suspense fallback={<Shimmerui/>}>
+            <Cart />
+          </Suspense>
+        ),
       },
     ],
   },

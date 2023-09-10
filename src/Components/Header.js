@@ -3,7 +3,9 @@ import { Logo } from "../assets/img";
 import { Link } from "react-router-dom";
 
 import Usercontext from "../../utils/Usercontext";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+import {useSelector } from "react-redux";
+import store from "./store";
 
 
 
@@ -21,7 +23,9 @@ const Title = () => {
 const Headercomponent = () => {
   const { user } = useContext(Usercontext);
   const [Isloggedin, setIsloggedin] = useState(true);
-  const cartitems = useSelector((store) => ( store.cart.items ));
+  // const cartitems = useSelector((store) => ( store.cart.items ));
+  const cartitems = useSelector(store => (store.cart.items))
+  console.log(cartitems); 
   return (
     <div className="flex  justify-between bg- bg-pink-200 text-black shadow-lg">
       <Title />
@@ -45,7 +49,10 @@ const Headercomponent = () => {
           <Link to="/instamart">
             <li className=" px-2">instamart</li>
           </Link>
-          <li className=" px-2">cart{cartitems.length}</li>
+          {/* <li className=" px-2">cart{cartitems.length}</li> */}
+          <Link to="/cart">
+            <li className="px-2">cart-{cartitems.length}</li>
+          </Link>
         </ul>
       </div>
       <h1 className="pt-10 text-xl text-red-600 ml-16"> {user.name}</h1>
